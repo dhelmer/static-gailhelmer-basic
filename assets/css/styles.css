@@ -1,0 +1,221 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Start DH */
+h2.headline {
+  font-family: "Roboto", sans-serif;
+  color: red;
+}
+
+header.site_header {
+  background-color: #0a202b;
+  height: 100px;
+}
+header.site_header h2 {
+  color: #ffffff;
+}
+header a {
+  text-decoration: none;
+}
+
+.site_logo {
+  position: absolute;
+  z-index: 100;
+  top: 32px;
+}
+.site_logo__domain_name {
+  color: #fff4e1;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.photo-main {
+  width: 400px;
+  margin: 0 auto;
+}
+.photo-main img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page_content {
+  background: #f9f6f0;
+  margin: 0 auto;
+}
+.page_content__padding {
+  padding: 35px 50px 35px 50px;
+}
+.page_content .names, .page_content .dates {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  width: 400px;
+  margin: 15px auto;
+  line-height: 1.5;
+  text-align: center;
+}
+.page_content .obit-text {
+  font-family: "Roboto", sans-serif;
+  width: 400px;
+  margin: 0 auto;
+}
+.page_content .obit-text p {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #595143;
+}
+
+.page_banner {
+  min-height: 170px;
+  background: #256d4e;
+}
+.page_banner__title {
+  color: #f9f2e8;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 0 #1e5f42;
+  font-size: 52px;
+  padding-top: 52px;
+  padding-left: 52px;
+}
+@media (min-width: 576px) {
+  .page_banner__title {
+    font-size: 52px;
+    padding-top: 52px;
+    padding-left: 52px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page_banner__title {
+    font-size: 52px;
+    padding-top: 52px;
+    padding-left: 52px;
+  }
+}
+@media (min-width: 1024px) {
+  .page_banner__title {
+    font-size: 52px;
+    padding-top: 52px;
+    padding-left: 52px;
+  }
+}
+
+.site_footer {
+  padding: 40px 0;
+  background: #226146;
+  color: #4cb88a;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.site_footer .note {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 12px;
+}
+.site_footer a {
+  color: #f9f6f0;
+}
+
+/*# sourceMappingURL=styles.css.map */

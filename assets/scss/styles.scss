@@ -1,0 +1,139 @@
+$phone-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@import 'mixins/queries';
+@import 'reset';
+
+/* Start DH */
+h2.headline {
+  font-family: "Roboto",sans-serif;
+  color: red;
+}
+
+header {
+  &.site_header {
+    background-color: #0a202b;
+    height: 100px;
+
+    h2 {
+      color: #ffffff;
+    }
+  }
+
+  a  {
+    text-decoration: none;
+  }
+}
+
+.site_logo {
+  position: absolute;
+  z-index: 100;
+  top: 32px;
+
+  &__domain_name {
+    color: #fff4e1;
+    font-family: "Oswald",sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+}
+
+.photo-main {
+  width: 400px;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.page_content {
+  background: #f9f6f0;
+  margin: 0 auto;
+
+  &__padding {
+    padding: 35px 50px 35px 50px;
+  }
+
+
+  .names, .dates {
+    font-family: "Roboto",sans-serif;
+    font-size: 25px;
+    width: 400px;
+    margin: 15px auto;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .obit-text {
+    font-family: "Roboto",sans-serif;
+    width: 400px;
+    margin: 0 auto;
+    p {
+      margin-top: 15px;
+      font-size: 20px;
+      line-height: 1.75;
+      color: #595143;
+    }
+  }
+}
+
+.page_banner {
+  min-height: 170px;
+  background: #256d4e;
+
+  &__title {
+    color: #f9f2e8;
+    font-family: "Oswald",sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 0 #1e5f42;
+    font-size: 52px;
+    padding-top: 52px;
+    padding-left: 52px;
+
+    @include phone {
+      font-size: 52px;
+      padding-top: 52px;
+      padding-left: 52px;
+    }
+
+
+    @include tablet {
+      font-size: 52px;
+      padding-top: 52px;
+      padding-left: 52px;
+    }
+  
+    @include desktop {
+      font-size: 52px;
+      padding-top: 52px;
+      padding-left: 52px;
+    }
+  }
+}
+
+.site_footer {
+  padding: 40px 0;
+  background: #226146;
+  color: #4cb88a;
+  font-family: "Roboto",sans-serif;
+  font-size: 14px;
+  text-align: center;
+
+  .note {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 12px;
+  }
+
+  a {
+    color: #f9f6f0;
+  }
+}
+
+
+
+
