@@ -7,19 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Gail Helmer of Calgary, Alberta, Canada">
     <meta name="keywords" content="Gail, Helmer, obituary">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i|Oswald|Source+Code+Pro">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="site_header">
-      <a class="site_logo" href="/">
-        <span class="site_logo__domain_name">gailhelmer.com</span>
-        <span class="site_logo__full_name"></span>
-      </a>
+      <div class="center">
+        <a class="site_logo" href="/">
+          <span class="site_logo__short_name">gailhelmer.com</span>
+          <span class="site_logo__long_name">In Memoriam of Gail Helmer of Calgary, Alberta, Canada</span>
+        </a>
+        <nav class="site_menu">
+          <label class="site_menu__dropdown_button" for="site_menu__dropdown_checkbox">Menu</label>
+          <input class="site_menu__dropdown_checkbox" id="site_menu__dropdown_checkbox" type="checkbox">
+          <ul class="site_menu__list">
+            <li class="site_menu__item">
+                <a class="site_menu__link site_menu__link--active" href="/">Home</a>
+            </li>
+            <li class="site_menu__item">
+                <a class="site_menu__link" href="/pictures">Pictures</a>
+            </li>
+            <li class="site_menu__item">
+                <a class="site_menu__link" href="/guestbook">Guest Book</a>
+            </li>
+          </ul>
+        </nav>
+      </div>  
     </header>
     <div class="page_content">
       <div class="page_banner">
-        <h1 class="page_banner__title">In Memoriam</h1>
+        <div class="center">
+          <h1 class="page_banner__title">In Memoriam</h1>
+        </div>
       </div>
       <div class="center">
         <div class="page_content__padding">
@@ -53,5 +73,7 @@
         <p class="note">Please note: This site is in development. We plan to add several new sections in the coming days and weeks.</p>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>
