@@ -452,7 +452,8 @@ html {
 }
 
 .page_banner {
-  background: #256d4e url(/img/page_banner_bg.jpg) center top no-repeat;
+  /*background: #256d4e url(/img/page_banner_bg.jpg) center top no-repeat;*/
+  background: #256d4e;
   background-size: cover
 }
 
@@ -1564,4 +1565,47 @@ html {
   font-size: 20px;
   line-height: 1.75;
   color: #595143;
+}
+
+/* Image grid */
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  background: #ffffff;
+}
+
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.33%;
+}
+
+.grid-item {
+  float: left;
+}
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  border: 10px solid white;
+}
+@media screen and (max-width: 414px) {
+  .grid-item img {
+    border: 5px solid white;
+  }
+}
+
+.grid-item.grid-item__expanded {
+  width: 66.66%;
+  z-index: 2;
 }
