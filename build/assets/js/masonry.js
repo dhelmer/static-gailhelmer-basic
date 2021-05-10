@@ -1,10 +1,11 @@
 var grid = document.querySelector('.grid');
 var msnry;
 // element selectors
-var imgAll = document.querySelectorAll('.grid-item');
-var imgNy = document.querySelectorAll('.newYork');
-var imgFlowers = document.querySelectorAll('.flowers');
-var imgOthers = document.querySelectorAll('.others');
+var imgAll      = document.querySelectorAll('.grid-item');
+var imgBetty    = document.querySelectorAll('.betty');
+var imgNy       = document.querySelectorAll('.newYork');
+var imgFlowers  = document.querySelectorAll('.flowers');
+var imgOthers   = document.querySelectorAll('.others');
 // buttons
 const tabsUl = document.getElementById('buttonGroup');
 const lis = tabsUl.children;
@@ -56,20 +57,25 @@ tabsUl.addEventListener('click', (event) =>{
 			imgAll[i].style.display = "block";
 		}
 	}
+
+  //show betty images
+	if(event.target.id == "betty"){
+		showImages(imgBetty, imgNy, imgFlowers, imgOthers);
+	}
 	
 	//show ny images
 	if(event.target.id == "newYork"){
-		showImages(imgNy, imgFlowers, imgOthers);
+		showImages(imgNy, imgBetty, imgFlowers, imgOthers);
 	}
 	
 	// show flowers
 	if(event.target.id == "flowers"){
-		showImages(imgFlowers, imgNy, imgOthers);
+		showImages(imgFlowers, imgBetty, imgNy, imgOthers);
 	}
 	
 	// show other images
 	if(event.target.id == "others"){
-		showImages(imgOthers, imgFlowers, imgNy);
+		showImages(imgOthers, imgFlowers, imgBetty, imgNy);
 	}
 	
 	msnry.layout();
