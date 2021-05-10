@@ -432,6 +432,10 @@ html {
   text-align: center
 }
 
+.site_footer p {
+  line-height: 1.6;
+}
+
 .site_footer__link {
   color: #7cddb4;
   text-decoration: none
@@ -1563,7 +1567,26 @@ html {
 .page_content .obit-text p {
   margin-top: 15px;
   font-size: 20px;
-  line-height: 1.75;
+  line-height: 1.60;
+  color: #595143;
+}
+
+.page_content .ownWords {
+  width: 400px;
+  margin: 25px auto;
+  padding: 10px 18px;
+  background-color: wheat;
+}
+
+.page_content .title-emphasis {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.page_content .ownWords p {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 1.6;
   color: #595143;
 }
 
