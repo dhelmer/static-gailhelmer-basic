@@ -1,11 +1,13 @@
 var grid = document.querySelector('.grid');
 var msnry;
 // element selectors
-var imgAll      = document.querySelectorAll('.grid-item');
-var imgBetty    = document.querySelectorAll('.betty');
-var imgNy       = document.querySelectorAll('.newYork');
-var imgFlowers  = document.querySelectorAll('.flowers');
-var imgOthers   = document.querySelectorAll('.others');
+var imgAll      		= document.querySelectorAll('.grid-item');
+var imgBetty    		= document.querySelectorAll('.betty');
+var imgHome      		= document.querySelectorAll('.home');
+var imgStyle      	= document.querySelectorAll('.style');
+var imgCalligraphy	= document.querySelectorAll('.calligraphy');
+var imgFlowers  		= document.querySelectorAll('.flowers');
+var imgOthers   		= document.querySelectorAll('.others');
 // buttons
 const tabsUl = document.getElementById('buttonGroup');
 const lis = tabsUl.children;
@@ -33,8 +35,8 @@ function toggleClass(parentElem, childElems, className){
 	}
 }
 
-function showImages(showImg, hideImg1, hideImg2){
-	for(let i = 0; i < showImg.length; i++){
+function showImages(showImg, hideImg1, hideImg2, hideImg3, hideImg4, hideImg5){
+		for(let i = 0; i < showImg.length; i++){
 			showImg[i].style.display = "block";
 		}
 		for(let i = 0; i < hideImg1.length; i++){
@@ -42,6 +44,15 @@ function showImages(showImg, hideImg1, hideImg2){
 		}
 		for(let i = 0; i< hideImg2.length; i++){
 			hideImg2[i].style.display = "none";
+		}
+		for(let i = 0; i< hideImg3.length; i++){
+			hideImg3[i].style.display = "none";
+		}
+		for(let i = 0; i< hideImg4.length; i++){
+			hideImg4[i].style.display = "none";
+		}
+		for(let i = 0; i< hideImg5.length; i++){
+			hideImg5[i].style.display = "none";
 		}
 }
 
@@ -60,22 +71,32 @@ tabsUl.addEventListener('click', (event) =>{
 
   //show betty images
 	if(event.target.id == "betty"){
-		showImages(imgBetty, imgNy, imgFlowers, imgOthers);
+		showImages(imgBetty, imgHome, imgStyle, imgCalligraphy, imgFlowers, imgOthers);
 	}
 	
-	//show ny images
-	if(event.target.id == "newYork"){
-		showImages(imgNy, imgBetty, imgFlowers, imgOthers);
+	//show home images
+	if(event.target.id == "home"){
+		showImages(imgHome, imgBetty, imgStyle, imgCalligraphy, imgFlowers, imgOthers);
+	}
+
+	//show style images
+	if(event.target.id == "style"){
+		showImages(imgStyle, imgBetty, imgHome, imgCalligraphy, imgFlowers, imgOthers);
+	}
+
+	//show calligraphy images
+	if(event.target.id == "calligraphy"){
+		showImages(imgCalligraphy, imgBetty, imgHome, imgStyle, imgFlowers, imgOthers);
 	}
 	
 	// show flowers
 	if(event.target.id == "flowers"){
-		showImages(imgFlowers, imgBetty, imgNy, imgOthers);
+		showImages(imgFlowers, imgBetty, imgHome, imgStyle, imgCalligraphy, imgOthers);
 	}
 	
 	// show other images
 	if(event.target.id == "others"){
-		showImages(imgOthers, imgFlowers, imgBetty, imgNy);
+		showImages(imgOthers, imgBetty, imgHome, imgStyle, imgCalligraphy, imgFlowers);
 	}
 	
 	msnry.layout();

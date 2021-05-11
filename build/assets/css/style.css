@@ -1561,7 +1561,8 @@ html {
 }
 .page_content .obit-text {
   font-family: "Roboto", sans-serif;
-  width: 400px;
+  width: 100%;
+  max-width: 685px;
   margin: 0 auto;
 }
 .page_content .obit-text p {
@@ -1572,10 +1573,11 @@ html {
 }
 
 .page_content .ownWords {
-  width: 400px;
+  width: 100%;
+  max-width: 685px;
   margin: 25px auto;
   padding: 10px 18px;
-  background-color: wheat;
+  background-color: #B6CEC4;
 }
 
 .page_content .title-emphasis {
@@ -1585,9 +1587,10 @@ html {
 
 .page_content .ownWords p {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   color: #595143;
+  font-family: Roboto, sans-serif;
 }
 
 /* Image grid */
