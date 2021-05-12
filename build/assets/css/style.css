@@ -1655,3 +1655,30 @@ html {
 .img-container:hover .overlay {
   opacity: 1;
 }
+
+.guestbook_entry {
+  font-family: Roboto, sans-serif;
+  max-width: 650px;
+  width: 100%;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.dark {
+  background-color: #97BAAB;
+}
+
+.light {
+  background-color:  #B6CEC4;
+}
+
+.guestbook_entry p {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.guestbook_entry .author {
+  text-align: right;
+}
