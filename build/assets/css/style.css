@@ -1536,7 +1536,8 @@ html {
 
 /* Main photo */
 .photo-main {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 .photo-main img {
@@ -1551,10 +1552,18 @@ html {
 .page_content__padding {
   padding: 35px 50px 35px 50px;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .page_content__padding {
+    padding: 35px 10px 35px 10px;
+  }
+
+}
+
 .page_content .names, .page_content .dates {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
-  width: 400px;
   margin: 15px auto;
   line-height: 1.5;
   text-align: center;
@@ -1609,70 +1618,6 @@ html {
   font-family: Roboto, sans-serif;
 }
 
-
-
-/* Image grid */
-* {
-  box-sizing: border-box;
-}
-
-.grid {
-  background: #ffffff;
-}
-
-.grid:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 33.33%;
-}
-
-.grid-item {
-  float: left;
-}
-.grid-item:hover {
-  cursor: pointer;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-  border: 10px solid white;
-}
-@media screen and (max-width: 414px) {
-  .grid-item img {
-    border: 5px solid white;
-  }
-}
-
-.grid-item.grid-item__expanded {
-  width: 66.66%;
-  z-index: 2;
-}
-
-/* image text overlay */
-.overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.img-container:hover .overlay {
-  opacity: 1;
-}
 
 .guestbook_entry {
   font-family: Roboto, sans-serif;
@@ -1738,4 +1683,67 @@ em {
 
 .reverse {
   color: #ffffff;
+}
+
+/* Image grid */
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  background: #ffffff;
+}
+
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.33%;
+}
+
+.grid-item {
+  float: left;
+}
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  border: 10px solid white;
+}
+@media screen and (max-width: 414px) {
+  .grid-item img {
+    border: 5px solid white;
+  }
+}
+
+.grid-item.grid-item__expanded {
+  width: 66.66%;
+  z-index: 2;
+}
+
+/* image text overlay */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
 }
