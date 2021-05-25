@@ -1663,6 +1663,7 @@ div.container-pic {
 
 .page-intro-text {
   text-align:center;
+  line-height: 1.4;
   margin-bottom:15px;
   margin-top:15px;
   font-size:24px;
