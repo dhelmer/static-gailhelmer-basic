@@ -1671,6 +1671,10 @@ div.container-pic {
   font-family: Roboto, sans-serif;
 }
 
+.page-intro-text.small {
+  font-size: 18px;
+}
+
 .magazine_title {
   color: #8A8A8A;
   font-family: "Oswald",sans-serif;

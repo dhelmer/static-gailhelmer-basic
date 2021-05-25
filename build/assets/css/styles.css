@@ -131,6 +131,12 @@ header a {
   padding: 0 15px;
 }
 
+.center:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media only screen and (min-width: 1640px) {
   .center {
     width: 1600px;
