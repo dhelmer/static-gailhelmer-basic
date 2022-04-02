@@ -1,9 +1,0 @@
-{
-  "name": "website-one",
-  "scripts": {
-    "do-sass": "sass scss/styles.scss build/assets/css/styles.css"
-  },
-  "dependencies": {
-    "dart-sass": "^1.25.0"
-  }
-}
