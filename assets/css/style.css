@@ -1664,8 +1664,8 @@ div.container-pic {
 .page-intro-text {
   text-align:center;
   line-height: 1.4;
-  margin-bottom:15px;
-  margin-top:15px;
+  margin: 15px auto;
+  max-width: 710px;
   font-size:24px;
   font-weight:300;
   font-family: Roboto, sans-serif;
