@@ -1622,6 +1622,14 @@ html {
   max-width: 600px;
 }
 
+button.btn.btn-primary.float-right {
+  background-color: #226146;
+}
+
+button.btn.btn-primary.float-right:hover {
+  background-color: #357e5e;
+}
+
 
 .guestbook_entry {
   font-family: Roboto, sans-serif;
