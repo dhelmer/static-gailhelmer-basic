@@ -1618,6 +1618,10 @@ html {
   font-family: Roboto, sans-serif;
 }
 
+.page_content .messageForm {
+  max-width: 600px;
+}
+
 
 .guestbook_entry {
   font-family: Roboto, sans-serif;
